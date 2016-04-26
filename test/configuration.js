@@ -23,7 +23,7 @@ describe('configuration', function() {
     
   describe('from url', function() {
     before(function() {
-      this.configuration = sut({ url: 'redis://user:pwd@127.0.0.1:3000' });
+      this.configuration = sut({ url: 'redis://user:pwd@127.0.0.1:3000/4' });
     });
     
     it('should set correct host', function() {
@@ -32,6 +32,10 @@ describe('configuration', function() {
       
     it('should set correct port', function() {
       this.configuration.port.should.equal(3000);
+    });
+      
+    it('should set correct db', function() {
+      this.configuration.db.should.equal(4);
     });
      
     it('should set correct password', function() {

@@ -14,6 +14,10 @@ describe('Redis', function() {
   it('should connect to default port', function() {
     sut.connection.options.port.should.equal(6379);
   });
+    
+  it('should connect to default db', function() {
+    sut.connection.options.db.should.equal(0);
+  });
       
   it('should generate keys', function() {
     sut.key('a', 'b', 'c').should.equal('a:b:c');
