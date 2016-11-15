@@ -1,5 +1,5 @@
 {
-  "name": "@ftbl/redis",
+  "name": "@recipher/redis",
   "version": "1.0.3",
   "description": "Redis connection manager",
   "main": "node index",
@@ -17,15 +17,15 @@
     "url": "git@github.com:projectftbl/redis.git"
   },
   "dependencies": {
-    "@ftbl/configuration": "^1.0.0",
-    "@ftbl/log": "^1.0.0",
+    "@recipher/configuration": "^1.0.0",
+    "@recipher/log": "^1.0.0",
     "bluebird": "^2.9.34",
     "chalk": "^1.1.0",
     "ioredis": "^1.7.3",
     "lodash.defaults": "^3.1.2"
   },
   "devDependencies": {
-    "@ftbl/gulp": "^1.0.5",
+    "@recipher/gulp": "^1.0.5",
     "chai": "^3.4.1",
     "gulp": "^3.9.0",
     "mocha": "^2.3.4",

@@ -1,11 +1,11 @@
-## @ftbl/redis
+## @recipher/redis
 
 Redis connection helper. 
 
 ### Usage
 
 ```javascript
-var redis = require('@ftbl/redis');
+var redis = require('@recipher/redis');
 
 // redis.connection
 // redis.config  // { port: ..., host: ..., password: ... }
